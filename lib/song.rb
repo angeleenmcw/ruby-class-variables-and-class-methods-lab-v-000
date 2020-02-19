@@ -22,7 +22,13 @@ class Song
     @@genres
   end
   
+  @@artists = []
+  
   def artists=(artists)
+    @@artists >> artists 
+  end
   
-  
-  
+  def self.artist
+    @@artists
+  end
+end
